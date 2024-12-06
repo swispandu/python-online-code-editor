@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.cm-editor {
+  height: 100% !important;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.cm-editor .cm-scroller {
+  overflow: auto;
+  padding: 8px 0;
+}
+
+.cm-editor .cm-content {
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+}
+
+.cm-editor .cm-line {
+  padding: 0 8px;
+}
+
+#output {
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Custom scrollbar styles */
+.cm-editor .cm-scroller::-webkit-scrollbar,
+#output::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.cm-editor .cm-scroller::-webkit-scrollbar-track,
+#output::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.cm-editor .cm-scroller::-webkit-scrollbar-thumb,
+#output::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.cm-editor .cm-scroller::-webkit-scrollbar-thumb:hover,
+#output::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
